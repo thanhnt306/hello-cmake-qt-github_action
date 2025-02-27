@@ -8,7 +8,7 @@ on:
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
-  BUILD_TYPE: Debug
+  BUILD_TYPE: Release
 
 jobs:
   build:
@@ -22,9 +22,9 @@ jobs:
 
     - name: Install Qt
       # Installs the Qt SDK
-      uses: jurplel/install-qt-action@v2
+      uses: jurplel/install-qt-action@v4
       with:
-        version: '5.15.2'
+        version: '6.6.3'
         host: 'windows'
         target: 'desktop'
         arch: 'win64_msvc2019_64'
