@@ -7,6 +7,9 @@ project(hello-cmake-qt)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
+message(STATUS "Using Qt version: ${Qt6_VERSION}")
+message(STATUS "Using Qt version: ${Qt6Core_VERSION}")
+
 # Add the executable
 add_executable(hello-cmake-qt main.cpp)
 
